@@ -103,7 +103,7 @@
             <li class='active'>
                 <a href="#"><span class="nav-label">Cadastro</span><span class="fa arrow"></span> </a>
                 <ul class="nav nav-second-level">
-                        <li class='active'><a href="clientes.html">Clientes</a></li>
+                        <li class='active'><a href="clientes.html">Proprietários</a></li>
                         <li><a href="imoveis.html">Imóveis</a></li>
                         <li><a href="inquelinos.html">Inquelinos</a></li>
                         <li><a href="contratos.html">Contratos</a></li>
@@ -205,9 +205,54 @@
                             <input type='text' class='form-control' placeholder="(00) 00000-0000" />
                         </div>
                         <div class="col-sm-4">
-                            <label>Telefone Residencial</label>
-                            <input type='text' class='form-control' placeholder="(00) 00000-0000" />
+                            <label>Profissão</label>
+                            <input type='text' class='form-control' placeholder="Infomar a profissão" />
                         </div>
+                        <div class="col-sm-4">
+                            <label>Renda</label>
+                            <input type='text' class='form-control' placeholder="Infomar a renda do inquelino" />
+                        </div>
+                        <div class="col-sm-4">
+                                <label>Estado Civil</label>
+                                <select data-toggle='collapse' data-target='#conjuge' class='form-control'>
+                                    <option>Solteiro(a)</option>
+                                    <option>Casado(a)</option>
+                                    <option>Viúvo(a)</option>
+                                    <option>Divorciado(a)</option>
+                                </select>
+                            </div>
+                            <div class='col-sm-12 collapse' id='conjuge'>
+
+                                    <h4>Dados do Cônjuge</h4>
+                                    <div class="col-sm-4">
+                                        <label>Nome Completo</label>
+                                        <input type='text' class='form-control' placeholder="Informe o nome completo" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>CPF</label>
+                                        <input type='text' class='form-control' placeholder="999.999.999-99" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>RG</label>
+                                        <input type='text' class='form-control' placeholder="Ex.: 150244-4 SSP/MT" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Data de Nascimento</label>
+                                        <input type='date' class='form-control' />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Telefone </label>
+                                        <input type='text' class='form-control' placeholder="(00) 00000-0000" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Profissão</label>
+                                        <input type='text' class='form-control' placeholder="Infomar a profissão" />
+                                    </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <label>Anotações</label>
+                                <input type='textarea' class='form-control' placeholder="Coloque suas anotações aqui." />
+                            </div>
 
                     </form>
                 </div>

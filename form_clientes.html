@@ -103,7 +103,7 @@
             <li class='active'>
                 <a href="#"><span class="nav-label">Cadastro</span><span class="fa arrow"></span> </a>
                 <ul class="nav nav-second-level">
-                        <li class='active'><a href="clientes.html">Clientes</a></li>
+                        <li class='active'><a href="clientes.html">Proprietários</a></li>
                         <li><a href="imoveis.html">Imóveis</a></li>
                         <li><a href="inquelinos.html">Inquelinos</a></li>
                         <li><a href="contratos.html">Contratos</a></li>
@@ -157,8 +157,7 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="hpanel">
-                <div class="panel-heading">
-                </div>
+                <div class="panel-heading"></div>
                 <div class="panel-body">
                     <form method="post" >
                         <div class="col-sm-4">
@@ -209,19 +208,67 @@
                             <label>Telefone Residencial</label>
                             <input type='text' class='form-control' placeholder="(00) 00000-0000" />
                         </div>
+                        <div class="col-sm-4">
+                                <label>Profissão</label>
+                                <input type='text' class='form-control' placeholder="Infomar a profissão" />
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Estado Civil</label>
+                            <select data-toggle='collapse' data-target='#conjuge' class='form-control'>
+                                <option>Solteiro(a)</option>
+                                <option>Casado(a)</option>
+                                <option>Viúvo(a)</option>
+                                <option>Divorciado(a)</option>
+                            </select>
+                        </div>
+                        <div class='col-sm-12 collapse' id='conjuge'>
+
+                                    <h4>Dados do Cônjuge</h4>
+                                    <div class="col-sm-4">
+                                        <label>Nome Completo</label>
+                                        <input type='text' class='form-control' placeholder="Informe o nome completo" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>CPF</label>
+                                        <input type='text' class='form-control' placeholder="999.999.999-99" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>RG</label>
+                                        <input type='text' class='form-control' placeholder="Ex.: 150244-4 SSP/MT" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Data de Nascimento</label>
+                                        <input type='date' class='form-control' />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Telefone </label>
+                                        <input type='text' class='form-control' placeholder="(00) 00000-0000" />
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label>Profissão</label>
+                                        <input type='text' class='form-control' placeholder="Infomar a profissão" />
+                                    </div>
+                        </div><!-- dados Conjuge-->
+                        <div class="col-sm-12">
+                            <label>Anotações</label>
+                            <input type='textarea' class='form-control' placeholder="Coloque suas anotações aqui." />
+                        </div>
+                        
 
                     </form>
-                </div>
+                </div><!-- panel body -->
                 <div class='panel-footer'>
                     <div class='btn-group'>
                         <button class='btn btn-default'>Cancelar</button>
-                        <button class='btn btn-primary'>Salvar</button>
+                        <button class='btn btn-primary' data-toggle='modal' data-target='#myModal'>Salvar</button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
+            </div><!-- hpanel-->
+        </div><!-- col 12-->
+    </div><!-- row -->
+</div><!-- content-->
+
+
 
 
 
@@ -237,7 +284,44 @@
         Facill Imobiliária 2019 Versão 1.0
     </footer>
 
-</div>
+</div><!-- wrap-->
+
+    <!-- Modal -->
+    <div class='modal fade hmodal-info' id='myModal' tabindex='-1' role='dialog' aria-hidden='true'>
+        <div class='modal-dialog modal-sm'>
+            <div class='modal-content'>
+                <div class='color-line'></div>
+                <div class='modal-header'>
+                    <h4 class='modal-title'>Dados Bancários</h4>
+                    <small>Incluir dados bancários.</small>
+                </div>
+                <div class='modal-body'>
+
+                    <label>Titular</label>
+                    <input type='text' class='form-control' placeholder='Nome completo do titular' />
+                    <label>CPF</label>
+                    <input type='text' class='form-control' placeholder='999.999.999-99' />
+                    <label>Banco</label>
+                    <input type='text' class='form-control' placeholder='Nome completo do titular' />
+                    <label>Tipo</label>
+                    <select class='form-control' id='tipo'>
+                        <option>Poupança</option>
+                        <option>Corrente</option>
+                    </select>
+                    <label>Agência</label>
+                    <input type='text' class='form-control' placeholder='Nome completo do titular' />
+                    <label>Conta</label>
+                    <input type='text' class='form-control' placeholder='Nome completo do titular' />
+                
+                </div>
+                <div class='modal-footer'>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 <!-- Vendor scripts -->
 <script src="vendor/jquery/dist/jquery.min.js"></script>
